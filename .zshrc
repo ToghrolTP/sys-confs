@@ -1,6 +1,10 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$PATH:/home/toghrol/scripts"
+
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="xiong-chiamiov-plus"
+ZSH_THEME="gentoo"
 
 plugins=( 
     git
@@ -29,8 +33,12 @@ else
   export EDITOR='mvim'
 fi
 
+
 # Set-up icons for files/folders in terminal using eza
-alias ls='eza --icons'
-alias ls -a='eza -a --icons'
-alias ll='eza -al --icons'
-alias lt='eza -a --tree --level=1 --icons'
+# alias ls='eza --icons'
+# alias ls -a='eza -a --icons'
+# alias ll='eza -al --icons'
+# alias lt='eza -a --tree --level=1 --icons'
+alias update='sudo apt update -y && sudo apt dist-upgrade -y && sudo apt clean -y'
+
+
